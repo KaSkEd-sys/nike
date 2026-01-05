@@ -1,9 +1,13 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul,
+ol,
+nav,
 a {
     text-decoration: none;
+    list-style: none
 }
-
-ul, nav {
-    list-style: none;
-    text-decoration: none;
-}
-
