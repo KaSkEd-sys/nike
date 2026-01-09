@@ -1,5 +1,29 @@
+:root {
+    --header-bg: #012D63;
+    --header-link: #C7C7C7;
+    --white: #FFFFFF;
+}
+
 .header {
-    background-color: #012D63;
+    background-color: var(--header-bg);
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+}
+
+.header-nav {
+    display: flex;
+}
+
+.header-item {
+    color: var(--header-link);
+    padding-right: 29px;
+}
+
+.header-item:hover {
+    color: var(--white);
 }
 
 .logo {
