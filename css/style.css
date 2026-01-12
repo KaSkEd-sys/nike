@@ -2,21 +2,26 @@
     --header-bg: #012D63;
     --header-link: #C7C7C7;
     --white: #FFFFFF;
+    --btn-color: #8E32C6;
+}
+
+.whyus-title {
+    display: none;
 }
 
 .header {
-    background-color: var(--header-bg);
+    background-color: var(--header-bg) ;
     width: 1440px;
     height: 90px;
     display: flex;
     align-items: center;
 }
-
 .container {
     width: 100%;
     max-width: 1440px;
     margin: 0 auto;
     padding: 0 20px;
+    padding-left: 0px;padding-right: 0px;
 }
 
 .header-list {
@@ -86,17 +91,140 @@
 }
 
 .hero {
-    background: url("../img/background.png");
-    width: 1440px;
-    height: 858px;
+    background: url("../img/background.png") center / cover no-repeat;
+    min-height: 100vh;
 }
 
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    padding-top: 90px;
+    padding-left: 160px;
+}
+
+
 .hero-logo {
-    width: 160px;
-    height: 120px;
+    width: 120px;
+    margin-bottom: 20px;
     padding-right: 0px;
     padding-left: 0px;
     margin-top: 94px;
     margin-left: 170px;
 }
 
+
+.hero-marker {
+    font-family: "PT Serif";
+    font-size: 36px;
+    color: #fff;
+    margin-bottom: 20px;
+    margin-left: 195px;
+}
+
+.hero-title {
+    font-family: "Playfair Display";
+    font-size: 140px;
+    font-weight: 400;
+    color: #fff;
+    margin: 0 0 10px 0;
+}
+
+
+.hero-undertitle {
+    font-family: "Playfair Display";
+    font-size: 48px;
+    font-weight: 400;
+    color: #fff;
+    margin-bottom: 25px;
+}
+
+
+.hero-subtitle {
+    max-width: 520px;
+    font-family: "Roboto";
+    font-size: 16px;
+    line-height: 1.6;
+    color: #fff;
+}
+
+.hero-btn {
+    width: 254px;
+    height: 67px;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--btn-color);
+    font-family: "Roboto";
+    font-weight: 400px;
+    font-size: 24px;
+    line-height: 100%;
+    color: var(--white);
+    margin-top: 41px;
+}
+
+.whyus {
+    padding: 120px 0;
+    background-color: #050510;
+    background-image:
+        radial-gradient(at 0% 20%, rgba(142, 50, 198, 0.6) 0px, transparent 65%),
+        radial-gradient(at 90% 100%, rgba(0, 245, 212, 0.5) 0px, transparent 65%);
+    display: flex;
+    justify-content: center;
+}
+
+
+.whyus-box {
+    border: 3px solid var(--btn-color);
+    padding: 60px 40px;
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.whyus-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.whyus-item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 30px;
+    text-align: center;
+    position: relative;
+    padding: 0 20px;
+}
+.whyus-item:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 1px;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+
+.whyus-element-title {
+    font-family: "Playfair Display", serif;
+    font-size: 40px; 
+    color: var(--white);
+    font-weight: 400;
+    line-height: 1.1;
+    margin: 0; 
+}
+
+
+.whyus-img {
+    width: auto;
+    height: 200px; 
+    object-fit: contain;
+    display: block;
+}
