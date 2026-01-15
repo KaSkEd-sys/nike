@@ -3,6 +3,8 @@
     --header-link: #C7C7C7;
     --white: #FFFFFF;
     --btn-color: #8E32C6;
+    --backbg: #050510;
+    --date-color: #D8D8D8;
 }
 
 .whyus-title {
@@ -10,18 +12,20 @@
 }
 
 .header {
-    background-color: var(--header-bg) ;
+    background-color: var(--header-bg);
     width: 1440px;
     height: 90px;
     display: flex;
     align-items: center;
 }
+
 .container {
     width: 100%;
     max-width: 1440px;
     margin: 0 auto;
     padding: 0 20px;
-    padding-left: 0px;padding-right: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
 }
 
 .header-list {
@@ -126,16 +130,18 @@
     font-size: 140px;
     font-weight: 400;
     color: #fff;
-    margin: 0 0 10px 0;
+    margin-left: 156px;
+    margin-bottom: 0;
 }
 
 
 .hero-undertitle {
     font-family: "Playfair Display";
-    font-size: 48px;
+    font-size: 72px;
     font-weight: 400;
     color: #fff;
-    margin-bottom: 25px;
+    margin-bottom: 12px;
+    margin-left: 164px;
 }
 
 
@@ -145,6 +151,7 @@
     font-size: 16px;
     line-height: 1.6;
     color: #fff;
+    margin-left: 164px;
 }
 
 .hero-btn {
@@ -159,11 +166,13 @@
     line-height: 100%;
     color: var(--white);
     margin-top: 41px;
+    margin-bottom: 183px;
+    margin-left: 164px;
 }
 
 .whyus {
-    padding: 120px 0;
-    background-color: #050510;
+    padding: 105px 0;
+    background-color: var(--backbg);
     background-image:
         radial-gradient(at 0% 20%, rgba(142, 50, 198, 0.6) 0px, transparent 65%),
         radial-gradient(at 90% 100%, rgba(0, 245, 212, 0.5) 0px, transparent 65%);
@@ -201,6 +210,7 @@
     position: relative;
     padding: 0 20px;
 }
+
 .whyus-item:not(:last-child)::after {
     content: "";
     position: absolute;
@@ -213,18 +223,85 @@
 
 
 .whyus-element-title {
+    display: flex;
+    flex-wrap: wrap;
     font-family: "Playfair Display", serif;
-    font-size: 40px; 
+    font-size: 36px;
     color: var(--white);
     font-weight: 400;
-    line-height: 1.1;
-    margin: 0; 
+    line-height: 100%;
+    margin: 0;
 }
 
 
 .whyus-img {
-    width: auto;
-    height: 200px; 
+    width: 240px;
+    height: 240px;
     object-fit: contain;
     display: block;
+}
+
+.reviews {
+    background-color: var(--backbg);
+    background-image: radial-gradient(at 90% 100%, rgba(0, 245, 212, 0.5) 0px, transparent 65%);
+    ;
+    width: 1440px;
+
+}
+
+.reviews-list {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+
+.reviews-title {
+    display: flex;
+    font-family: "Playfair Display";
+    font-weight: 400;
+    font-size: 48px;
+    justify-content: center;
+    color: var(--white);
+}
+
+.reviews-img {
+    width: 31px;
+    height: 31px;
+    object-fit: cover;
+    border-radius: 40%;
+}
+
+.reviews-msg {
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 24px;
+    color: var(--white);
+}
+
+.reviews-name {
+    font-family: "Roboto";
+    font-size: 14px;
+    color: var(--white);
+}
+
+.reviews-wus {
+    font-family: "Roboto";
+    font-size: 12px;
+    color: var(--date-color);
+}
+
+.reviews-item {
+    width: 280px;
+    height: 280px;
+    background-color: var(--white);
+    border-radius: 20px;
+    padding: 20px;
+
+    display: grid;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 114px;
+    margin-top: 24px;
 }
