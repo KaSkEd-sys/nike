@@ -6,6 +6,8 @@
     --backbg: #050510;
     --date-color: #D8D8D8;
     --form-text-color: #959595;
+    --footer-bg: #021635;
+    --footer-border: #9B9B9B;
 }
 
 .whyus-title {
@@ -454,3 +456,83 @@ input[type="text"] {
     box-sizing: border-box;
 }
 
+.form-btn {
+    width: 248px;
+    height: 68px;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--btn-color);
+    font-family: "Roboto";
+    font-weight: 400px;
+    font-size: 24px;
+    line-height: 100%;
+    color: var(--white);
+    margin-bottom: 37px;
+    margin-left: 596px;
+    margin-top: 19px;
+}
+
+
+.footer {
+  background-color: var(--footer-bg);
+  color: #ffffff;
+  padding: 50px 0;
+}
+
+
+.footer-top, 
+.footer-bottom {
+  display: flex;
+  justify-content: space-between; 
+  align-items: flex-start;
+}
+
+
+.footer-text, 
+.footer-link {
+  display: block;
+  margin: 0;
+  margin-bottom: 15px;
+  font-size: 24px;
+  text-decoration: underline;
+  color: #ffffff;
+}
+
+
+.footer-emails {
+  text-align: right;
+}
+
+
+.footer-line {
+  border: 0;
+  border-top: 1px solid var(--footer-border);
+  margin: 10px 0 30px 0;
+}
+
+
+.footer-bottom {
+  align-items: flex-end;
+}
+
+.footer-copy, 
+.footer-country {
+  margin: 0;
+  margin-bottom: 5px;
+  font-size: 18px;
+  opacity: 0.8;
+}
+
+.footer-logo-block {
+  text-align: center;
+}
+
+.footer-logo-img {
+  width: 108px;
+  display: block;
+}
+
+.footer-marker {
+  margin: 0;
+  font-size: 20px;
+}
