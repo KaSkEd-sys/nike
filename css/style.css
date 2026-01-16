@@ -39,6 +39,7 @@
     padding-top: 30px;
     padding-right: 152px;
     padding-left: 152px;
+    padding-bottom: 30px;
 }
 
 .header-logo {
@@ -82,6 +83,7 @@
     gap: 29px;
     justify-content: flex-end;
     margin-bottom: 30px;
+    margin-top: 30px;
 }
 
 .header-lang-link {
@@ -334,7 +336,7 @@
 .review-card1, .review-card2, .review-card3 {
     width: 255px;
     height: 292px;
-    border-radius: 20px;
+    border-radius: 15px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat; 
@@ -347,14 +349,18 @@
 
 .review-card1 {
     background-image: url("../img/cardbg1.png");
+    box-shadow: 1px 4px 2px 0px rgba(89,54,115,0.75);
 }
 
 .review-card2 {
     background-image: url("../img/cardbg2.png");
+    box-shadow: 1px 4px 2px 0px rgba(100,46,122,0.75);
 }
 
 .review-card3 {
     background-image: url("../img/cardbg3.png");
+    border-radius: 20px;
+    box-shadow: -1px 4px 2px 0px rgba(112,42,35,0.75);
 }
 
 
