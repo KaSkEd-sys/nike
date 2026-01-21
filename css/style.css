@@ -10,42 +10,42 @@
     --footer-border: #9B9B9B;
 }
 
+.container {
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 15px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
 .whyus-title {
     display: none;
 }
 
 .header {
     background-color: var(--header-bg);
-    min-width: 1440px;
-    height: 90px;
-    display: flex;
-    align-items: center;
+    padding: 16px 0;
 }
 
-.container {
-    width: 100%;
-    max-width: 1440px;
-    margin: 0 auto;
-    padding: 0 20px;
-    padding-left: 0px;
-    padding-right: 0px;
+
+.header-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
+
 
 .header-list {
     display: flex;
     align-items: center;
     gap: 29px;
     justify-content: center;
-    padding-top: 30px;
-    padding-right: 152px;
-    padding-left: 152px;
-    padding-bottom: 30px;
 }
 
 .header-logo {
     width: 100px;
     height: 60px;
-    margin-left: 168px;
 }
 
 .header-link {
@@ -71,9 +71,6 @@
     align-items: center;
     gap: 15px;
     justify-content: center;
-    padding-top: 30px;
-    padding-right: 152px;
-    margin-bottom: 30px;
     padding-left: 73px;
 }
 
@@ -113,12 +110,9 @@
 
 
 .hero-logo {
-    width: 120px;
-    margin-bottom: 20px;
+    width: 160px;
     padding-right: 0px;
     padding-left: 0px;
-    margin-top: 94px;
-    margin-left: 170px;
 }
 
 
