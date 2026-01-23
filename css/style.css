@@ -99,27 +99,27 @@
 .hero {
     background: url("../img/background.png") center / cover no-repeat;
     min-height: 100vh;
+    display: flex;
+    align-items: center;
 }
 
-.hero {
+.hero > .container {
     display: flex;
     flex-direction: column;
-    padding-top: 90px;
-    padding-left: 160px;
+    padding-left: 100px;
+    padding-top: 0;
 }
-
 
 .hero-logo {
     width: 160px;
-    padding-right: 0px;
-    padding-left: 0px;
+    margin-bottom: 10px;
 }
-
 
 .hero-marker {
     font-family: "PT Serif";
     font-size: 48px;
     color: #fff;
+    margin: 0;
 }
 
 .hero-title {
@@ -127,16 +127,18 @@
     font-size: 140px;
     font-weight: 400;
     color: #fff;
+    margin: 0;
+    line-height: 1;
 }
-
 
 .hero-undertitle {
     font-family: "Playfair Display";
     font-size: 72px;
     font-weight: 400;
     color: #fff;
+    margin: 10px 0;
+    line-height: 1;
 }
-
 
 .hero-subtitle {
     max-width: 520px;
@@ -144,6 +146,7 @@
     font-size: 16px;
     line-height: 1.6;
     color: #fff;
+    margin: 20px 0;
 }
 
 .hero-btn {
@@ -153,15 +156,11 @@
     border-radius: 10px;
     background-color: var(--btn-color);
     font-family: "Roboto";
-    font-weight: 400px;
+    font-weight: 400;
     font-size: 24px;
-    line-height: 100%;
     color: var(--white);
-    margin-top: 41px;
-    margin-bottom: 183px;
-    margin-left: 164px;
+    margin-top: 20px;
 }
-
 .whyus {
     padding: 105px 0;
     background-color: var(--backbg);
@@ -449,22 +448,30 @@ input[type="text"] {
     box-sizing: border-box;
 }
 
+.form-btn-wrapper {
+    display: flex;
+    justify-content: center ;
+}
+
 .form-btn {
-    width: 248px;
-    height: 68px;
+    width: 251px;
+
     border: none;
     border-radius: 10px;
     background-color: var(--btn-color);
+
     font-family: "Roboto";
     font-weight: 400;
     font-size: 24px;
     line-height: 100%;
     color: var(--white);
-    margin-bottom: 37px;
-    margin-left: 596px;
-    margin-top: 19px;
-}
 
+    padding: 20px 0;
+    box-sizing: border-box;
+
+    margin-top: 19px;
+    margin-bottom: 37px;
+}
 
 .footer {
   background-color: var(--footer-bg);
