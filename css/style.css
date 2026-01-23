@@ -101,7 +101,7 @@
     min-height: 100vh;
 }
 
-.hero-content {
+.hero {
     display: flex;
     flex-direction: column;
     padding-top: 90px;
@@ -118,10 +118,8 @@
 
 .hero-marker {
     font-family: "PT Serif";
-    font-size: 36px;
+    font-size: 48px;
     color: #fff;
-    margin-bottom: 20px;
-    margin-left: 195px;
 }
 
 .hero-title {
@@ -129,8 +127,6 @@
     font-size: 140px;
     font-weight: 400;
     color: #fff;
-    margin-left: 156px;
-    margin-bottom: 0;
 }
 
 
@@ -139,8 +135,6 @@
     font-size: 72px;
     font-weight: 400;
     color: #fff;
-    margin-bottom: 12px;
-    margin-left: 164px;
 }
 
 
@@ -150,7 +144,6 @@
     font-size: 16px;
     line-height: 1.6;
     color: #fff;
-    margin-left: 164px;
 }
 
 .hero-btn {
@@ -463,7 +456,7 @@ input[type="text"] {
     border-radius: 10px;
     background-color: var(--btn-color);
     font-family: "Roboto";
-    font-weight: 400px;
+    font-weight: 400;
     font-size: 24px;
     line-height: 100%;
     color: var(--white);
