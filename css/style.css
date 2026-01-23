@@ -11,12 +11,9 @@
 }
 
 .container {
-    width: 100%;
-    max-width: 1140px;
+    width: 1140px;
     margin: 0 auto;
     padding: 0 15px;
-    padding-left: 0px;
-    padding-right: 0px;
 }
 
 .whyus-title {
